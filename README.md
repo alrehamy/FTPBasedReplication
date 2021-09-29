@@ -10,7 +10,9 @@ This class offers great functionality to implement file replication between loca
 To begin with, you need to set the FTP connection settings:
 
 FTP_SERV: Full FTP Uri
+
 FTP_USER: FTP username
+
 FTP_USER_PASSWD: FTP password
 
 To start replicating:
@@ -28,15 +30,16 @@ To start replicating:
 300: File Not Allowed
 500: FTP Server is offline or the file does not exist
 
-# Use case
-After finishing storing the file on local server (e.g. fbUploader.SaveAs()), you can call OnFtpPutFile() to replicate the file on some remote FTP server, thus you are performing inline backup for files while performing file uploading.
+# Use cases
+- After finishing storing the file on local server (e.g. fbUploader.SaveAs()), you can call OnFtpPutFile() to replicate the file on some remote FTP server, thus you are performing inline backup for files while performing file uploading.
 
-Another usage is convert your web server to business logic server only whilst relying on external server for file storage only. This can be done by calling OnFtpPutStream, where you don't need to store anything on your main web server.
+- Another usage is convert your web server to business logic server only whilst relying on external server for file storage only. This can be done by calling OnFtpPutStream, where you don't need to store anything on your main web server.
 
-Another usage is to perform handy file caching during colocation or load balancing by keeping frequently accessed files on the main web browser, whilst removing them on expiry and pull fresh copies. In such use case, I strongly recommend to check Redis Server.
+- Another usage is to perform handy file caching during colocation or load balancing by keeping frequently accessed files on the main web browser, whilst removing them on expiry and pull fresh copies. In such use case, I strongly recommend to check Redis Server.
 
 # Credit
-This class is not dependent on any external libraries. It was written by me to enable IT operations expansion in University of Babylon. For contacting me:
+This class is not dependent on any external libraries. It was written by me to enable IT operations expansion in <a href="http://www.uobabylon.edu.iq">University of Babylon</a>. For contacting me:
 
-Dr. Hassan H. Alrehamy
-h@uobabylon.edu.iq
+  Dr. Hassan H. Alrehamy
+  h@uobabylon.edu.iq
+  University of Babylon
