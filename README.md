@@ -27,7 +27,9 @@ To start replicating:
         
 # Status codes
 200: OK
+
 300: File Not Allowed
+
 500: FTP Server is offline or the file does not exist
 
 # Use cases
@@ -41,5 +43,7 @@ To start replicating:
 This class is not dependent on any external libraries. It was written by me to enable IT operations expansion in <a href="http://www.uobabylon.edu.iq">University of Babylon</a>. For contacting me:
 
   Dr. Hassan H. Alrehamy
+  
   h@uobabylon.edu.iq
+  
   University of Babylon
